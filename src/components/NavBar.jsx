@@ -3,9 +3,9 @@ import React from 'react';
 function NavBar() {
   return (
     <>
-      <div className='navbar bg-lime-200'>
+      <div className='navbar bg-secondary'>
         <div className='flex-1'>
-          <a className='btn btn-outline btn-primary normal-case text-xl'>KJV</a>
+          <a className='btn btn-secondary normal-case text-xl'>KJV</a>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
@@ -78,11 +78,10 @@ function NavBar() {
           <div className='form-control'>
             <label className='label cursor-pointer'>
               <span className='label-text'>Accept T&C's</span>
-              <input type='checkbox' className='toggle' checked />
+              <input type='checkbox' className='toggle' />
             </label>
           </div>
-          <div className='modal-action'>
-            <div className='btn-group'></div>
+          <div className='modal-action flex justify-center'>
             <label htmlFor='my-modal' className='btn'>
               Submit
             </label>
