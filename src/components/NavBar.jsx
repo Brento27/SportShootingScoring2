@@ -3,16 +3,16 @@ import React from 'react';
 function NavBar() {
   return (
     <>
-      <div className='navbar bg-secondary'>
+      <div className='navbar bg-primary'>
         <div className='flex-1'>
-          <a className='btn btn-secondary normal-case text-xl'>KJV</a>
+          <a className='btn btn-ghost normal-case text-xl'>KJV</a>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
             <li>
               <label
                 htmlFor='my-modal'
-                className='btn btn-outline  btn-primary'
+                className='btn btn-outline btn-secondary'
               >
                 VrywaringsVorm
               </label>

@@ -1,8 +1,14 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
+import EventsCard from '../components/EventsCard';
+import Hero from '../components/Hero';
 
 function HomeScreen() {
-  return <Carousel />;
+  return (
+    <>
+      <Hero />
+      <EventsCard />
+    </>
+  );
 }
 
 export default HomeScreen;
