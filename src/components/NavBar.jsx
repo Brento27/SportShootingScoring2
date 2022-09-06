@@ -3,14 +3,17 @@ import React from 'react';
 function NavBar() {
   return (
     <>
-      <div className='navbar bg-primary'>
+      <div className='navbar bg-lime-200'>
         <div className='flex-1'>
-          <a className='btn btn-outline normal-case text-xl'>KJV</a>
+          <a className='btn btn-outline btn-primary normal-case text-xl'>KJV</a>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
             <li>
-              <label htmlFor='my-modal' className='btn btn-outline'>
+              <label
+                htmlFor='my-modal'
+                className='btn btn-outline  btn-primary'
+              >
                 VrywaringsVorm
               </label>
             </li>
@@ -21,22 +24,73 @@ function NavBar() {
       <input type='checkbox' id='my-modal' className='modal-toggle' />
       <div className='modal'>
         <div className='modal-box'>
-          <h3 className='font-bold text-lg'>
-            Vull asseblief die persoon se besonderhede in vir vrywarings vorm
-          </h3>
+          <h3 className='font-bold text-lg'>Vull asseblief in die volgende:</h3>
           <div className='form-control w-full max-w-xs'>
             <label className='label'>
-              <span className='label-text'>What is your name?</span>
+              <span className='label-text'>Lid naam?</span>
             </label>
             <input
               type='text'
-              placeholder='Type here'
+              placeholder='Tik Hier'
               className='input input-bordered w-full max-w-xs'
             />
           </div>
+          <div className='form-control w-full max-w-xs'>
+            <label className='label'>
+              <span className='label-text'>Lid id#</span>
+            </label>
+            <input
+              type='text'
+              placeholder='Tik Hier'
+              className='input input-bordered w-full max-w-xs'
+            />
+          </div>
+          <div className='form-control w-full max-w-xs'>
+            <label className='label'>
+              <span className='label-text'>Lid#</span>
+            </label>
+            <input
+              type='text'
+              placeholder='Tik Hier'
+              className='input input-bordered w-full max-w-xs'
+            />
+          </div>
+          <div className='form-control w-full max-w-xs'>
+            <label className='label'>
+              <span className='label-text'>Besoeker naam?</span>
+            </label>
+            <input
+              type='text'
+              placeholder='Tik Hier'
+              className='input input-bordered w-full max-w-xs'
+            />
+          </div>
+          <div className='form-control w-full max-w-xs'>
+            <label className='label'>
+              <span className='label-text'>Besoeker id#</span>
+            </label>
+            <input
+              type='text'
+              placeholder='Tik Hier'
+              className='input input-bordered w-full max-w-xs'
+            />
+          </div>
+          <div className='form-control'>
+            <label className='label cursor-pointer'>
+              <span className='label-text'>Accept T&C's</span>
+              <input type='checkbox' className='toggle' checked />
+            </label>
+          </div>
           <div className='modal-action'>
+            <div className='btn-group'></div>
             <label htmlFor='my-modal' className='btn'>
               Submit
+            </label>
+            <label htmlFor='my-modal' className='btn'>
+              Submit & Pay
+            </label>
+            <label htmlFor='my-modal' className='btn'>
+              View T&C's
             </label>
           </div>
         </div>
