@@ -6,21 +6,29 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
     screens: {
-      xs: '475px',
-      sm: '640px',
-      // => @media (min-width: 640px) { ... }
+      xxs: '320px',
+      // => @media (min-width: 568px) { ... }
 
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
+      xsm: '667px',
+      // => @media (min-width: 667px) { ... }
 
-      lg: '1024px',
+      sm: '800px',
+      // => @media (min-width: 850px) { ... }
+
+      md: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: '1280px',
-      // => @media (min-width: 1280px) { ... }
+      lg: '1440px',
+      // => @media (min-width: 1440px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      xl: '1680px',
+      // => @media (min-width: 1680px) { ... }
+
+      '2xl': '1920px',
+      // => @media (min-width: 1920px) { ... }
+
+      '3xl': '2560px',
+      // => @media (min-width: 2560px) { ... }
     },
   },
   plugins: [require('daisyui'), require('@tailwindcss/typography')],
