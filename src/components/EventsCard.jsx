@@ -3,7 +3,7 @@ import EventsCountDown from './EventsCountDown';
 
 function EventsCard() {
   return (
-    <div className='flex justify-around p-6'>
+    <div className='grid justify-items-center p-6 grid grid-cols-3 xs:grid-cols-1 gap-4'>
       <div className='card w-96 bg-green-300 shadow-xl'>
         <figure>
           <img src='https://placeimg.com/400/225/arch' alt='Shoes' />

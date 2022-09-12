@@ -1,11 +1,18 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate();
+  const onClcik = () => {
+    navigate('/tc');
+  };
   return (
     <>
       <div className='navbar bg-primary'>
         <div className='flex-1'>
-          <a className='btn btn-ghost normal-case text-xl'>KJV</a>
+          <Link to='/' className='btn btn-ghost normal-case text-xl'>
+            KJV
+          </Link>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
@@ -88,7 +95,8 @@ function NavBar() {
             <label htmlFor='my-modal' className='btn'>
               Submit & Pay
             </label>
-            <label htmlFor='my-modal' className='btn'>
+
+            <label htmlFor='my-modal' className='btn' onClick={onClcik}>
               View T&C's
             </label>
           </div>
