@@ -7,7 +7,7 @@ import gong from '../assets/img/gong.jpeg';
 function EventsCard() {
   return (
     <div className='grid justify-items-center p-6 grid grid-cols-3 xxs:grid-cols-1 xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-      <div className='card w-96 bg-green-300 shadow-xl'>
+      <div className='card w-96 bg-green-300 shadow-xl transition duration-500 hover:scale-110 hover:cursor-pointer'>
         <figure>
           <img src={shoot22} alt='Shoes' />
         </figure>
@@ -24,7 +24,7 @@ function EventsCard() {
           </div>
         </div>
       </div>
-      <div className='card w-96 bg-green-300 shadow-xl'>
+      <div className='card w-96 bg-green-300 shadow-xl transition duration-500 hover:scale-110 hover:cursor-pointer'>
         <figure>
           <img src={gong} alt='Shoes' />
         </figure>
@@ -41,7 +41,7 @@ function EventsCard() {
           </div>
         </div>
       </div>
-      <div className='card w-96 bg-green-300 shadow-xl'>
+      <div className='card w-96 bg-green-300 shadow-xl transition duration-500 hover:scale-110 hover:cursor-pointer'>
         <figure>
           <img src={pnp} alt='Shoes' />
         </figure>
