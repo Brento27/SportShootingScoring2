@@ -13,6 +13,9 @@ function NavBar() {
           <Link to='/' className='btn btn-ghost normal-case text-xl'>
             KJV
           </Link>
+          <Link to='/scoreboard' className='btn btn-ghost normal-case text-xl'>
+            Scoring
+          </Link>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
