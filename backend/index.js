@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
+const usersRoutes = express.Router();
 const cors = require('cors');
 app.use(cors());
 
@@ -21,10 +22,8 @@ database.once('connected', () => {
 
 app.use(express.json());
 
+app.use('/routes/users', usersRoutes);
+
 app.listen(5000, () => {
   console.log(`Server Started at ${5000}`);
 });
-
-// const routes = require('./Routes/routes');
-
-// app.use('/api', routes);
