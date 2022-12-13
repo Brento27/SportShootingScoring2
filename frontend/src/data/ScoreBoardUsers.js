@@ -9,6 +9,7 @@ export const shootersDefault = [
     gong4: false,
     gong5: false,
     total: 0,
+    submitted: false,
   },
   {
     id: '2',
@@ -20,5 +21,6 @@ export const shootersDefault = [
     gong4: false,
     gong5: false,
     total: 0,
+    submitted: false,
   },
 ];
